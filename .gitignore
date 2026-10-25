@@ -1,0 +1,19 @@
+# Datos: NO se suben a Git. Cada persona los obtiene con src/data/adquirir.py
+data/raw/*
+!data/raw/.gitkeep
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Entorno y sistema
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
