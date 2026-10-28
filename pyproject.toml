@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+# Permite que las pruebas importen "src.data..." desde la raíz del repositorio.
+pythonpath = ["."]
+testpaths = ["tests"]
