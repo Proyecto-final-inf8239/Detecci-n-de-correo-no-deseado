@@ -1,6 +1,7 @@
 # TF.10 · Detección de correo no deseado (SMS)
 
 INF-8239 Ciencia de Datos II · Equipo de 7 integrantes
+
 Alcance mínimo: 3 modelos, análisis comparativo, **12 pruebas** y una aplicación, API o tablero funcional.
 
 ## Inicio rápido (cualquier integrante)
