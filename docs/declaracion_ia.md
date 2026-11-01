@@ -1,0 +1,30 @@
+# Declaración de uso de inteligencia artificial
+
+Política TF.01: todo uso material se declara indicando herramienta, propósito, fragmento afectado, verificación realizada y cambios humanos. Cada integrante añade su propia sección.
+
+## Melvin H. Rivas G. · Paquete 1 (Gobernanza, adquisición y contrato de datos)
+
+### Resumen
+
+En el desarrollo del Paquete 1 se utilizó el asistente de IA **Claude (Anthropic)** como herramienta de apoyo para la elaboración de borradores de código y documentación, la explicación de conceptos técnicos y la estructuración del flujo de trabajo.
+
+Con asistencia de IA se definieron la estructura del repositorio, el contrato de datos y sus criterios de validación, a partir del perfil real del dataset. Entre ellos:
+- Proporción de spam admitida entre **5 % y 30 %**, tomando como referencia el 13.4 % observado.
+- Longitud máxima de **1000 caracteres** por mensaje, con margen sobre el máximo observado (910).
+- Tratamiento de los **403 duplicados** como advertencia y no como error.
+- Verificación de integridad mediante **SHA-256**.
+
+Cada componente fue revisado, ejecutado y validado por mí antes de su incorporación. La integración en el repositorio del equipo, la configuración de la organización, los permisos, la identidad de Git, la organización de issues, ramas y pull requests, la asignación de revisores y la protección de `main` fueron realizadas por mí. Durante la verificación se detectaron y corrigieron inconsistencias en el material generado. Asumo la responsabilidad de explicar, ejecutar y defender cada archivo incorporado.
+
+**Datos compartidos con la IA:** únicamente material público o del curso: el enunciado del trabajo final, la ficha pública de UCI, el dataset SMS Spam Collection (público, CC BY 4.0) y capturas de pantalla de mi entorno de trabajo. No se compartieron datos personales, sensibles ni institucionales no públicos.
+
+### Detalle
+
+| Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
+|---|---|---|---|---|---|
+| 2026-10-13 a 2026-10-18 | Claude (Anthropic) | Análisis del enunciado (TF.00, TF.01, TF.10) y delimitación de los entregables del Paquete 1 | Plan de trabajo y consultas al docente | Contraste con el documento oficial del curso | Definición del alcance del paquete y del orden de trabajo |
+| 2026-10-18 | Claude (Anthropic) | Elaboración asistida de la infraestructura de adquisición y del contrato de datos | `config/dataset.yaml`, `src/data/adquirir.py`, `src/data/esquema.py`, `src/data/cargar.py` | Descarga directa desde UCI con SHA-256 coincidente (Windows, Python 3.14.7); alteración intencional del archivo con detección de `ERROR DE INTEGRIDAD`; restauración desde respaldo local; rechazo de datos alterados (C1, C3, C4, C6) y abstención ante entradas inválidas | Validación de las reglas C1–C8 y de sus criterios; integración de cada componente en su propia rama y PR |
+| 2026-10-18 | Claude (Anthropic) | Elaboración asistida de pruebas automáticas y de la demostración | `tests/test_contrato.py`, `scripts/demo_gobernanza.py` | `pytest -v`: 22 casos aprobados; demostración ejecutada completa | Incorporación mediante PR con revisión de P7 |
+| 2026-10-18 a 2026-10-28 | Claude (Anthropic) | Elaboración asistida de la documentación de gobernanza | `docs/gobernanza/*` (ficha, diccionario, contrato, riesgos y usos, registro de cambios, guía) | Contraste de licencia (CC BY 4.0), DOI y conteos con la ficha de UCI, el readme de los autores y la salida de las pruebas | Actualización del registro de cambios con las verificaciones realizadas; envío de usos no permitidos y condiciones de detención a validación del equipo (P5) |
+| 2026-10-25 a 2026-10-31 | Claude (Anthropic) | Acompañamiento en la configuración del entorno y del flujo de trabajo en Git | `README.md`, `.gitignore`, `requirements.txt`, `pyproject.toml`, `.gitattributes`, `.github/` | Revisión previa a cada commit con `git status -u` (sin datos incluidos) y `git diff` (detección y reversión de un cambio accidental con `git restore`) | Inicialización del repositorio; identidad de Git local separada de otros proyectos; habilitación de permisos de escritura para el equipo; configuración de la protección de `main` y documentación de su límite en el plan gratuito; creación de los issues #1 y #3–#9 y sus PR; asignación de revisores |
+| 2026-10-27 a 2026-10-31 | Claude (Anthropic) | Auditoría del trabajo frente a los requisitos del curso | Numeración de issues en la guía; vinculación de PR con issues | Comprobación en GitHub de que cada PR quedara vinculado a su issue | Corrección de la numeración de issues (los PR comparten numeración con los issues) y de la palabra clave de cierre (`Closes` en lugar de `Cierra`) |
