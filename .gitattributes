@@ -1,0 +1,10 @@
+# Finales de línea (issue #9): dentro del repositorio todo el texto se guarda con LF y cada computadora lo
+# convierte al suyo al descargar. Así Windows, macOS y Linux ven los mismos cambios en los diff.
+* text=auto
+
+# Archivos binarios: nunca se convierten.
+*.png binary
+*.pdf binary
+*.docx binary
+*.joblib binary
+*.zip binary
