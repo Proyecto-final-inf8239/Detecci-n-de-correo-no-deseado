@@ -1,0 +1,58 @@
+{
+  "filas": 5574,
+  "ham": 4827,
+  "spam": 747,
+  "proporcion_spam": 0.134,
+  "duplicados_exactos": 403,
+  "duplicados_tras_normalizar": 437,
+  "huellas_con_etiquetas_contradictorias": 0,
+  "longitud_por_clase": {
+    "ham": {
+      "min": 2.0,
+      "25%": 33.0,
+      "50%": 52.0,
+      "75%": 93.0,
+      "max": 910.0
+    },
+    "spam": {
+      "min": 13.0,
+      "25%": 133.0,
+      "50%": 149.0,
+      "75%": 157.0,
+      "max": 223.0
+    }
+  },
+  "senales_por_clase": {
+    "url": {
+      "ham": 0.0029,
+      "spam": 0.1861
+    },
+    "telefono": {
+      "ham": 0.0006,
+      "spam": 0.7564
+    },
+    "monto": {
+      "ham": 0.0025,
+      "spam": 0.5274
+    },
+    "marcador_anonimizado": {
+      "ham": 0.0443,
+      "spam": 0.0
+    },
+    "exclamacion": {
+      "ham": 0.1164,
+      "spam": 0.49
+    }
+  },
+  "riesgos_de_atajo": [
+    "El marcador '&lt;#&gt;' aparece solo en ham: se neutraliza al normalizar.",
+    "La longitud separa fuertemente las clases (mediana 52 vs 149): se analiza por subgrupos en P4.",
+    "id_mensaje no se usa como predictor (podría correlacionar con la fuente)."
+  ],
+  "controles_de_fuga": [
+    "Deduplicación por texto normalizado antes de particionar.",
+    "Verificación automática de que ninguna huella cruza particiones (ErrorFuga).",
+    "TF-IDF dentro del Pipeline: el vocabulario se ajusta solo con entrenamiento.",
+    "Prueba se evalúa una sola vez, después de seleccionar modelo y umbrales."
+  ]
+}
