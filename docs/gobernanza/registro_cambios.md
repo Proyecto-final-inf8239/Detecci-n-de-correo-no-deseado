@@ -16,6 +16,8 @@
 | 2026-11-01 | El marcador de anonimización `&lt;#&gt;` se normaliza como un número más | Aparece solo en ham (4.4 %): es un artefacto de la fuente, no una señal | #20 | Berroa |
 | 2026-11-01 | Partición estratificada 70/15/15, semilla 42, con verificación automática de fuga | Reproducibilidad y evaluación honesta | #20 | Berroa |
 
+| 2026-11-01 | Objetivo codificado spam = 1; búsqueda de hiperparámetros con PR-AUC y CV estratificada de 5 pliegues | 13 % de spam: la exactitud engaña; el umbral lo decide P5 | # | Jhonathan |
+| 2026-11-01 | Modelos entrenados en artefactos/ fuera de Git; se regeneran al entrenar | Reproducibles desde código, semilla y hash de datos | # | Jhonathan |
 <!-- Plantilla de fila:
 | AAAA-MM-DD | Qué cambió | Por qué | #número | Nombre |
 -->
