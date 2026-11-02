@@ -16,7 +16,7 @@ Con asistencia de IA se definieron la estructura del repositorio, el contrato de
 
 Cada componente fue revisado, ejecutado y validado por mí antes de su incorporación. La integración en el repositorio del equipo, la configuración de la organización, los permisos, la identidad de Git, la organización de issues, ramas y pull requests, la asignación de revisores y la protección de `main` fueron realizadas por mí. Durante la verificación se detectaron y corrigieron inconsistencias en el material generado. Asumo la responsabilidad de explicar, ejecutar y defender cada archivo incorporado.
 
-**Datos compartidos con la IA:** únicamente material público o del curso: el enunciado del trabajo final, la ficha pública de UCI, el dataset SMS Spam Collection (público, CC BY 4.0) y capturas de pantalla de mi entorno de trabajo. No se compartieron datos personales, sensibles ni institucionales no públicos.
+**Datos compartidos con la IA:** únicamente material público o del curso: el enunciado del trabajo final, la ficha pública de UCI, el archivo ZIP público del dataset SMS Spam Collection (CC BY 4.0), solo para perfilarlo y calcular su hash y sin pegar mensajes con nombres ni teléfonos, y capturas de pantalla de mi entorno de trabajo. No se compartieron datos personales, sensibles ni institucionales no públicos.
 
 ### Detalle
 

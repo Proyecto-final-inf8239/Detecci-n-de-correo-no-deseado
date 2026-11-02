@@ -134,6 +134,7 @@ Es declarativo: el contrato se lee como una tabla de reglas y reporta todas las 
 **⭐ Pregunta de defensa del curso: ¿qué evidencia justifica priorizar revisión o cuarentena con apelación, y qué obligaría a detener, abstenerse o escalar?**
 Desde gobernanza:
 - **Evidencia:** datos de procedencia y licencia verificadas, versión garantizada por hash, contrato aprobado y limitaciones documentadas. La cuarentena es **reversible** porque un falso positivo (bloquear un mensaje legítimo) tiene un costo alto para el usuario.
+- **Evidencia de rendimiento (Paquete 4):** en prueba, el modelo elegido no bloqueó ningún mensaje legítimo (precisión de spam de 100 %, 0 de 678) y detectó el 91.4 % del spam. El estudio del umbral del Paquete 5 muestra que bajar el umbral empieza a bloquear mensajes legítimos.
 - **Detener:** el hash o el contrato fallan.
 - **Abstenerse:** la entrada viola el contrato, el idioma está fuera de cobertura o la probabilidad cae en la zona gris.
 - **Escalar:** el usuario apela, o la precisión de spam en el monitoreo cae por debajo del umbral.
@@ -163,7 +164,7 @@ Cada PR lo revisa otro compañero. **Tú revisas al menos un PR de otro paquete*
 
 ## 8. Validaciones pendientes con el equipo y el docente
 
-- [ ] Confirmar **modalidad A o B** (el paquete de Johanna sugiere B, DSS).
+- [x] Modalidad confirmada: **A · Proyecto aplicado** (no DSS). El Paquete 5 estudia el umbral, la abstención y el costo de bloquear legítimos.
 - [ ] Acordar cuántas de las **12 pruebas** del equipo son de contrato (aquí hay 13 funciones).
 - [ ] Validar en equipo los usos no permitidos y las condiciones para detener o escalar.
 - [ ] Confirmar con el docente que la documentación en Markdown dentro del repositorio es válida.
