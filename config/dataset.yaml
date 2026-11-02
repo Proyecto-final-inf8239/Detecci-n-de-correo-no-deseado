@@ -1,0 +1,55 @@
+# =============================================================================
+# config/dataset.yaml — FUENTE ÚNICA DE VERDAD sobre el dataset
+# -----------------------------------------------------------------------------
+# Todo lo que el proyecto necesita saber sobre el origen de los datos vive aquí.
+# Si algo cambia (nueva versión, nueva URL, nuevo archivo), se cambia SOLO aquí,
+# mediante un pull request, y se anota en docs/gobernanza/registro_cambios.md.
+# Responsable: Melvin (Paquete 1 · Gobernanza, adquisición y contrato de datos)
+# =============================================================================
+
+nombre: "SMS Spam Collection"
+version: "v.1"
+tema_curso: "TF.10 · Detección de correo no deseado"
+
+# --- Procedencia -------------------------------------------------------------
+fuente: "UCI Machine Learning Repository"
+url_ficha: "https://archive.ics.uci.edu/dataset/228/sms+spam+collection"
+url_descarga: "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip"
+doi: "10.24432/C5CC84"
+creadores: ["Tiago A. Almeida", "José María Gómez Hidalgo"]
+donado_en_uci: "2012-06-21"
+articulo: >
+  Almeida, T. A., Gómez Hidalgo, J. M., & Yamakami, A. (2011). Contributions to
+  the study of SMS spam filtering: new collection and results. ACM Symposium on
+  Document Engineering (DocEng '11).
+
+# --- Licencia ----------------------------------------------------------------
+licencia: "CC BY 4.0"
+licencia_url: "https://creativecommons.org/licenses/by/4.0/"
+# CC BY 4.0 permite compartir y adaptar para cualquier fin, citando la fuente.
+
+# --- Archivo y su "huella digital" -------------------------------------------
+# El ZIP contiene dos archivos; el que usamos es SMSSpamCollection.
+archivo_datos: "SMSSpamCollection"
+archivo_readme: "readme"
+# SHA-256 del archivo de datos. Si un solo carácter cambia, el hash cambia.
+sha256: "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d"
+sha256_readme: "8753cd2d3cab68f80c8257851b8c2037778c267f55accb6fd1b5a2e32d36a84e"
+fecha_verificacion: "2026-10-18"
+
+# --- Formato del archivo -----------------------------------------------------
+formato:
+  separador: "\t"        # tabulador entre etiqueta y texto
+  encabezado: false      # el archivo NO trae fila de nombres de columna
+  codificacion: "utf-8"
+  columnas: ["etiqueta", "texto"]
+
+# --- Lo que esperamos encontrar (lo verifica el contrato) --------------------
+esperado:
+  filas: 5574
+  ham: 4827
+  spam: 747
+
+# --- Rutas locales (relativas a la raíz del repositorio) ---------------------
+rutas:
+  raw: "data/raw"
