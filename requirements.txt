@@ -10,3 +10,7 @@ scikit-learn>=1.5,<1.9
 
 # Paquete 3: persistencia de modelos
 joblib>=1.4
+
+# Paquete 4: pruebas estadísticas y gráficos
+scipy>=1.13
+matplotlib>=3.9
