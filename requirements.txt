@@ -1,0 +1,6 @@
+# Versiones verificadas el 2026-10-18 con Python 3.13.
+# Requiere Python 3.11 o superior (por pandas 3).
+pandas>=2.2,<4
+pandera==0.34.1
+PyYAML==6.0.3
+pytest==9.1.1
