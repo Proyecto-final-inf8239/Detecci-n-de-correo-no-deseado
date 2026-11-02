@@ -4,3 +4,6 @@ pandas>=2.2,<4
 pandera==0.34.1
 PyYAML==6.0.3
 pytest==9.1.1
+
+# Paquete 2: preparación y partición
+scikit-learn>=1.5,<1.9
