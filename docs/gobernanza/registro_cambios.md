@@ -18,6 +18,8 @@
 
 | 2026-11-01 | Objetivo codificado spam = 1; búsqueda de hiperparámetros con PR-AUC y CV estratificada de 5 pliegues | 13 % de spam: la exactitud engaña; el umbral lo decide P5 | #24 | Jhonathan |
 | 2026-11-01 | Modelos entrenados en artefactos/ fuera de Git; se regeneran al entrenar | Reproducibles desde código, semilla y hash de datos | #24 | Jhonathan |
+| 2026-11-02 | Criterio de selección fijado antes de ver prueba: PR-AUC ± 0.005, descartar > 2× más lento, menor Brier, resultó naive_bayes | Empate técnico entre los tres modelos; Green AI y calibración desempatan | #29 | Daniel |
+| 2026-11-02 | El reporte de errores guarda solo id_mensaje y rasgos, nunca el texto | Política de privacidad de riesgos_y_usos.md §4 | #29 | Daniel |
 <!-- Plantilla de fila:
 | AAAA-MM-DD | Qué cambió | Por qué | #número | Nombre |
 -->
