@@ -72,3 +72,12 @@ docs/gobernanza/         Ficha, diccionario, contrato, riesgos y registro de cam
 ## Datos y licencia
 
 SMS Spam Collection v.1 · Almeida & Gómez Hidalgo · UCI ML Repository · DOI 10.24432/C5CC84 · **CC BY 4.0**. Detalles en `docs/gobernanza/ficha_dataset.md`.
+
+## Protección de main y finales de línea
+
+- Nadie sube cambios directamente a `main`. Todo entra por un pull request que otra persona revisa y aprueba,
+  con las pruebas en verde.
+- Si la regla de protección de `main` no se aplica de forma automática (depende del plan de GitHub de la
+  organización), el equipo la cumple por acuerdo.
+- `.gitattributes` guarda el texto con LF dentro del repositorio y cada computadora lo convierte al suyo, así
+  los cambios se ven igual en Windows, macOS y Linux.
