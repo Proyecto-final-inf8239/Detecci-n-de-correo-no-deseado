@@ -7,3 +7,6 @@ pytest==9.1.1
 
 # Paquete 2: preparación y partición
 scikit-learn>=1.5,<1.9
+
+# Paquete 3: persistencia de modelos
+joblib>=1.4

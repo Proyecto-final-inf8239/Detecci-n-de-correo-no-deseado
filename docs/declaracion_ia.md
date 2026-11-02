@@ -36,3 +36,11 @@ Cada componente fue revisado, ejecutado y validado por mí antes de su incorpora
 | 2026-11-01 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/config.py`, `src/preparacion/`, `tests/test_preparacion.py`, `docs/preparacion.md` | Ejecución de `pytest -v` y revisión de los resultados | Ejecuté la auditoría y las pruebas en mi equipo, comparé las cifras del reporte (5 574 filas, 437 duplicados tras normalizar, 4.4 % de marcador anonimizado) con lo escrito en la documentación, verifiqué que lo descrito en docs/preparacion.md coincide con el código (huella SHA-1, ErrorFuga, partición 70/15/15 con semilla 42), resolví el conflicto de requirements.txt al integrar con main y revisé que no se subieran datos ni artefactos. |
 
 **Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
+
+## Jhonathan · Paquete 3 (Baseline y modelos candidatos)
+
+| Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
+|---|---|---|---|---|---|
+| 2026-11-01 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | src/modelos/, tests/test_modelos.py, docs/modelos.md | Ejecución de pytest -v y revisión de los resultados | Ejecuté y revisé los bloques de mi paquete, corregí el nombre de src/modelos/_init_.py y comprobé que las pruebas pasan antes de abrir el PR |
+
+*Datos compartidos con la IA:* solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.

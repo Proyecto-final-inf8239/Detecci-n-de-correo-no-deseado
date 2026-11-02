@@ -17,3 +17,9 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Modelos entrenados y registros de predicciones, fuera de Git
+artefactos/*
+!artefactos/.gitkeep
+logs/*
+!logs/.gitkeep
