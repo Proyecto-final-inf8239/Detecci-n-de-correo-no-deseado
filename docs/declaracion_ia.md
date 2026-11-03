@@ -66,7 +66,7 @@ Revisé las aserciones de las métricas de Green AI en las pruebas locales con p
 
 | Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
 |---|---|---|---|---|---|
-| 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/monitoreo/`, `.github/workflows/ci.yml`, `tests/test_monitoreo.py`, `docs/monitoreo.md` | Ejecución de `pytest -v` en mi equipo y revisión de los resultados | Ejecuté todos los pasos de la secuencia en Git y GitHub con mi cuenta; verifiqué con sha256sum que cada archivo coincide con la guía; revisé y aprobé los PR #18 y #33 ejecutando las pruebas en mi equipo |
+| 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/monitoreo/`, `.github/workflows/ci.yml`, `tests/test_monitoreo.py`, `docs/monitoreo.md`, `docs/model_card.md`, `README.md` | Ejecución de `pytest -v` en mi equipo y revisión de los resultados | Ejecuté todos los pasos de la secuencia en Git y GitHub con mi cuenta; verifiqué con sha256sum que cada archivo coincide con la guía; revisé y aprobé los PR #18 y #33 ejecutando las pruebas en mi equipo; comprobé las cifras de la Model Card y del README contra los reportes de reportes/ (métricas, umbral 0.73, subgrupos y barrido de umbrales) |
 
 **Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
 
