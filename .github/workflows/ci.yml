@@ -1,0 +1,31 @@
+# Integración continua: en cada push y pull request a main se descargan y
+# verifican los datos (hash), se compilan app y API y se ejecutan las pruebas.
+# Responsable: Rossesleidy · Paquete 7
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Adquirir y verificar datos (SHA-256)
+        run: python -m src.data.adquirir
+      - name: Compilar aplicación y API
+        run: python -m compileall -q src app api
+      - name: Pruebas
+        run: python -m pytest -v
