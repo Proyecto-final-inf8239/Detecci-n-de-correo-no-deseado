@@ -61,3 +61,11 @@ Revisé las aserciones de las métricas de Green AI en las pruebas locales con p
 | 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/decision/`, `tests/test_decision.py`, `docs/decision.md` | Ejecución de `pytest -v` y revisión de los resultados | Leí cada archivo de src/decision antes del commit; ejecuté pytest en mi equipo (37 pruebas pasan); verifiqué con sha256sum que los archivos coinciden con la guía; comprobé que los umbrales teóricos 0.30 y 0.97 salen de la matriz de costos 1, 10 y 0.3 y que el umbral 0.73 se eligió en validación; y revisé la precisión de cada regla en las clasificaciones de prueba.. |
 
 **Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
+
+## Rossesleidy · Paquete 7 (Pruebas, CI, monitoreo y documentación)
+
+| Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
+|---|---|---|---|---|---|
+| 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/monitoreo/`, `.github/workflows/ci.yml`, `tests/test_monitoreo.py`, `docs/monitoreo.md` | Ejecución de `pytest -v` en mi equipo y revisión de los resultados | Ejecuté todos los pasos de la secuencia en Git y GitHub con mi cuenta; verifiqué con sha256sum que cada archivo coincide con la guía; revisé y aprobé los PR #18 y #33 ejecutando las pruebas en mi equipo |
+
+**Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
