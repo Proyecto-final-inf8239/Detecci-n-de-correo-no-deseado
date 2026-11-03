@@ -24,6 +24,7 @@
 | 2026-11-02 | Abstención ante entrada inválida (C4/C5), español y desacuerdo entre modelos > 0.5 | Condiciones de riesgos_y_usos.md §6 | #34 | Johanna |
 | 2026-11-02 | Barrido de umbrales y umbral por razón de costos FP:FN para estudiar el costo de bloquear legítimos | Pregunta central del tema TF.10 en Modalidad A | #34 | Johanna |
 | 2026-11-02 | CI descarga y verifica los datos antes de las pruebas; alerta si la precisión de spam < 95 % | Sugerencia de P1 y condición para detener de riesgos_y_usos.md §6 | #36 | Rossesleidy |
+| 2026-11-02 | La app y la API usan el mismo servicio de inferencia y el registro de predicciones no guarda el texto | Misma recomendación en ambos canales y privacidad del usuario | #38 | Roque |
 <!-- Plantilla de fila:
 | AAAA-MM-DD | Qué cambió | Por qué | #número | Nombre |
 -->

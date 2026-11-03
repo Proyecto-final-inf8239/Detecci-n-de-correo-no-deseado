@@ -1,0 +1,25 @@
+{
+  "deduplicacion": {
+    "filas_entrada": 5574,
+    "eliminadas_por_conflicto": 0,
+    "duplicados_eliminados": 437,
+    "filas_salida": 5137
+  },
+  "particiones": {
+    "entrenamiento": {
+      "n": 3595,
+      "spam": 434,
+      "proporcion_spam": 0.1207
+    },
+    "validacion": {
+      "n": 771,
+      "spam": 93,
+      "proporcion_spam": 0.1206
+    },
+    "prueba": {
+      "n": 771,
+      "spam": 93,
+      "proporcion_spam": 0.1206
+    }
+  }
+}

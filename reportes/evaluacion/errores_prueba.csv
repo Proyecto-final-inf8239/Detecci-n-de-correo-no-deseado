@@ -1,0 +1,9 @@
+error,id_mensaje,y,longitud,con_url,con_telefono,con_monto,caracteres,p_spam
+falso negativo,2775,1,medio (100-160),sin URL,sin teléfono,sin monto,124,0.0018286996128316275
+falso negativo,2966,1,medio (100-160),sin URL,sin teléfono,sin monto,135,0.0018339388057684821
+falso negativo,1639,1,medio (100-160),sin URL,sin teléfono,sin monto,155,0.007527593514226295
+falso negativo,4915,1,medio (100-160),sin URL,sin teléfono,sin monto,155,0.09628585368235143
+falso negativo,5543,1,medio (100-160),sin URL,sin teléfono,con monto,158,0.11036713447834175
+falso negativo,685,1,medio (100-160),sin URL,con teléfono,sin monto,158,0.11638563299011426
+falso negativo,4070,1,medio (100-160),sin URL,sin teléfono,con monto,140,0.12629124463893995
+falso negativo,3303,1,corto (40-100),sin URL,sin teléfono,sin monto,40,0.3150085312779083

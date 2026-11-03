@@ -1,0 +1,37 @@
+{
+  "n": 771,
+  "costos": {
+    "fn": 1.0,
+    "fp": 10.0,
+    "abstencion": 0.3
+  },
+  "umbrales": {
+    "legitimo_bajo": 0.73,
+    "spam_desde": 0.73
+  },
+  "proporcion_etiquetas": {
+    "LEGITIMO": 0.8859,
+    "INCIERTO": 0.0091,
+    "SPAM": 0.1051
+  },
+  "tasa_abstencion": 0.0091,
+  "legitimos_marcados_spam": 0,
+  "spam_no_detectado": 7,
+  "precision_spam": 1.0,
+  "exactitud_sin_abstenciones": 0.9908,
+  "costo_por_1000": 11.8,
+  "costo_por_1000_umbral_fijo": 10.38,
+  "activaciones_reglas": {
+    "R01": 0,
+    "R02": 0,
+    "R03": 63,
+    "R04": 70,
+    "R05": 10,
+    "R06": 15
+  },
+  "umbrales_teoricos": {
+    "legitimo_bajo": 0.3,
+    "spam_desde": 0.97
+  },
+  "costo_por_1000_umbrales_teoricos": 14.92
+}
