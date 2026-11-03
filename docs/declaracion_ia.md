@@ -46,6 +46,7 @@ Cada componente fue revisado, ejecutado y validado por mí antes de su incorpora
 *Datos compartidos con la IA:* solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
 
 ## Daniel · Paquete 4 (Evaluación, errores, subgrupos y Green AI)
+Revisé las aserciones de las métricas de Green AI en las pruebas locales con pytest y verifiqué que el reporte de subgrupos no incluyera texto original para garantizar la anonimización de los datos.
 
 | Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
 |---|---|---|---|---|---|
