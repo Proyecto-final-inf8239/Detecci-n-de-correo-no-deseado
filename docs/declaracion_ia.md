@@ -44,3 +44,12 @@ Cada componente fue revisado, ejecutado y validado por mí antes de su incorpora
 | 2026-11-01 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | src/modelos/, tests/test_modelos.py, docs/modelos.md | Ejecución de pytest -v y revisión de los resultados | Ejecuté y revisé los bloques de mi paquete, corregí el nombre de src/modelos/_init_.py y comprobé que las pruebas pasan antes de abrir el PR |
 
 *Datos compartidos con la IA:* solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
+
+## Daniel · Paquete 4 (Evaluación, errores, subgrupos y Green AI)
+Revisé las aserciones de las métricas de Green AI en las pruebas locales con pytest y verifiqué que el reporte de subgrupos no incluyera texto original para garantizar la anonimización de los datos.
+
+| Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
+|---|---|---|---|---|---|
+| 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/evaluacion/`, `tests/test_evaluacion.py`, `docs/evaluacion.md` | Ejecución de `pytest -v` y revisión de los resultados |  |
+
+**Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
