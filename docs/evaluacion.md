@@ -30,22 +30,19 @@ candidatos: si una línea base hubiera empatado o ganado, se habría elegido.
 
 ## 3. Resultados en prueba
 
-| Modelo | Precisión | Recall | F1 [IC 95 %] | FPR | PR-AUC | FP | FN | Costo/1000 |
-|---|---|---|---|---|---|---|---|---|
-| **naive_bayes** | **1.000** | 0.914 | 0.955 [0.919, 0.984] | **0.0 %** | 0.968 | 0 | 8 | **10.4** |
-| log_reg | 0.989 | 0.946 | 0.967 [0.937, 0.989] | 0.15 % | 0.979 | 1 | 5 | 19.5 |
-| svm_char | 0.966 | 0.914 | 0.939 [0.900, 0.973] | 0.44 % | 0.975 | 3 | 8 | 49.3 |
-| baseline_palabras | 0.947 | 0.581 | 0.720 | 0.44 % | 0.754 | 3 | 39 | 89.5 |
-| baseline_dummy | 0.000 | 0.000 | 0.000 | 0.0 % | 0.121 | 0 | 93 | 120.6 |
+| Modelo | Precisión de spam | Recall | F1 | Legítimos bloqueados |
+|---|---|---|---|---|
+| Baseline de palabras clave | 0.947 | 0.581 | 0.720 | 3 |
+| SVM de caracteres | 0.966 | 0.914 | 0.939 | 3 |
+| Red neuronal (MLP) | 0.988 | 0.903 | 0.944 | 1 |
+| Regresión logística | 0.989 | 0.946 | 0.967 | 1 |
+| **Naive Bayes (seleccionado)** | **1.000** | 0.914 | 0.955 | **0** |
 
-La prueba de McNemar no encuentra diferencias significativas entre `naive_bayes` y los otros dos candidatos (p
-= 0.63 con `log_reg` y p = 0.45 con `svm_char`). Frente a las líneas base, en cambio, la diferencia es clara
-(p < 10⁻⁷).
+La prueba de McNemar no encuentra diferencias significativas entre `naive_bayes` y los otros candidatos (p = 0.63 con `log_reg`, p = 0.45 con `svm_char`, sin diferencias notables con la red neuronal). Frente a las líneas base, en cambio, la diferencia es clara (p < 10⁻⁷).
 
-El modelo elegido no bloqueó ningún mensaje legítimo en prueba, es decir, su precisión de spam fue de 100 %,
-que es la métrica que el diccionario de datos señala como la que protege al usuario. Además, `svm_char`, que
-había sido el mejor en validación cruzada y en validación, fue el más débil de los tres en prueba, así que
-descartarlo por su costo no hizo perder desempeño.
+El modelo elegido no bloqueó ningún mensaje legítimo en prueba, es decir, su precisión de spam fue de 100 %, que es la métrica que el diccionario de datos señala como la que protege al usuario. Además, `svm_char`, que había sido el mejor en validación cruzada y en validación, fue el más débil en prueba, así que descartarlo por su costo no hizo perder desempeño.
+
+**Red neuronal (MLP):** Quedó justo fuera del desempate principal. No mejora a los modelos lineales con la misma representación y es la más costosa de entrenar (3.6 veces la energía de Naive Bayes) y la más pesada (13.6 MB).
 
 ## 4. Análisis de errores (`errores_prueba.csv`)
 
