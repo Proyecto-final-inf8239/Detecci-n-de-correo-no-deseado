@@ -1,0 +1,42 @@
+{
+  "naive_bayes": {
+    "mejores_parametros": {
+      "clf__alpha": 0.1
+    },
+    "pr_auc_cv_media": 0.975,
+    "pr_auc_cv_desviacion": 0.0124,
+    "combinaciones": 4,
+    "pliegues": 5,
+    "segundos_busqueda": 162.25
+  },
+  "log_reg": {
+    "mejores_parametros": {
+      "clf__C": 100.0
+    },
+    "pr_auc_cv_media": 0.9798,
+    "pr_auc_cv_desviacion": 0.0118,
+    "combinaciones": 4,
+    "pliegues": 5,
+    "segundos_busqueda": 44.42
+  },
+  "svm_char": {
+    "mejores_parametros": {
+      "clf__estimator__C": 1.0
+    },
+    "pr_auc_cv_media": 0.9854,
+    "pr_auc_cv_desviacion": 0.011,
+    "combinaciones": 3,
+    "pliegues": 5,
+    "segundos_busqueda": 98.23
+  },
+  "mlp": {
+    "mejores_parametros": {
+      "clf__alpha": 0.001
+    },
+    "pr_auc_cv_media": 0.9679,
+    "pr_auc_cv_desviacion": 0.0132,
+    "combinaciones": 2,
+    "pliegues": 5,
+    "segundos_busqueda": 398.03
+  }
+}

@@ -1,0 +1,15 @@
+grupo,valor,n,n_spam,n_ham,recall,fpr
+longitud,corto (40-100),308,9,299,0.8888888888888888,0.0
+longitud,largo (>160),47,13,34,1.0,0.0
+longitud,medio (100-160),173,69,104,0.8985507246376812,0.0
+longitud,muy corto (<40),243,2,241,1.0,0.0
+con_url,con URL,10,9,1,1.0,0.0
+con_url,sin URL,761,84,677,0.9047619047619048,0.0
+con_telefono,con teléfono,67,67,0,0.9850746268656716,
+con_telefono,sin teléfono,704,26,678,0.7307692307692307,0.0
+con_monto,con monto,27,25,2,0.92,0.0
+con_monto,sin monto,744,68,676,0.9117647058823529,0.0
+anonimizado,con marcador <#>,25,0,25,,0.0
+anonimizado,sin marcador,746,93,653,0.9139784946236559,0.0
+mayusculas,mayúsculas > 50 %,19,4,15,0.75,0.0
+mayusculas,normal,752,89,663,0.9213483146067416,0.0

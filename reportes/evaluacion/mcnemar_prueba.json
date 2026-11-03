@@ -1,0 +1,32 @@
+{
+  "baseline_dummy": {
+    "b": 85,
+    "c": 0,
+    "p_valor": 8.156648879083517e-20,
+    "metodo": "chi2 con corrección"
+  },
+  "baseline_palabras": {
+    "b": 35,
+    "c": 1,
+    "p_valor": 3.7979124931775396e-08,
+    "metodo": "chi2 con corrección"
+  },
+  "log_reg": {
+    "b": 1,
+    "c": 3,
+    "p_valor": 0.625,
+    "metodo": "exacta"
+  },
+  "svm_char": {
+    "b": 5,
+    "c": 2,
+    "p_valor": 0.453125,
+    "metodo": "exacta"
+  },
+  "mlp": {
+    "b": 3,
+    "c": 1,
+    "p_valor": 0.625,
+    "metodo": "exacta"
+  }
+}
