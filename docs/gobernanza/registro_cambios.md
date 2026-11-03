@@ -23,6 +23,7 @@
 | 2026-11-02 | Matriz de costos FN = 1, FP = 10, abstención = 0.3; umbrales optimizados en validación (0.73 / 0.73) | Las probabilidades no están perfectamente calibradas; los teóricos (0.30 / 0.97) cuestan más | #34 | Johanna |
 | 2026-11-02 | Abstención ante entrada inválida (C4/C5), español y desacuerdo entre modelos > 0.5 | Condiciones de riesgos_y_usos.md §6 | #34 | Johanna |
 | 2026-11-02 | Barrido de umbrales y umbral por razón de costos FP:FN para estudiar el costo de bloquear legítimos | Pregunta central del tema TF.10 en Modalidad A | #34 | Johanna |
+| 2026-11-02 | CI descarga y verifica los datos antes de las pruebas; alerta si la precisión de spam < 95 % | Sugerencia de P1 y condición para detener de riesgos_y_usos.md §6 | #36 | Rossesleidy |
 <!-- Plantilla de fila:
 | AAAA-MM-DD | Qué cambió | Por qué | #número | Nombre |
 -->
