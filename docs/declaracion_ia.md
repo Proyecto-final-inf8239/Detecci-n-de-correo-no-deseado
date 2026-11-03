@@ -69,3 +69,11 @@ Revisé las aserciones de las métricas de Green AI en las pruebas locales con p
 | 2026-11-02 | Claude (Anthropic) | Apoyo en la escritura de código, pruebas y documentación del paquete | `src/monitoreo/`, `.github/workflows/ci.yml`, `tests/test_monitoreo.py`, `docs/monitoreo.md` | Ejecución de `pytest -v` en mi equipo y revisión de los resultados | Ejecuté todos los pasos de la secuencia en Git y GitHub con mi cuenta; verifiqué con sha256sum que cada archivo coincide con la guía; revisé y aprobé los PR #18 y #33 ejecutando las pruebas en mi equipo |
 
 **Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
+
+## Roque · Paquete 6 (Aplicación Streamlit, API o pipeline e integración)
+
+| Fecha | Herramienta | Propósito | Fragmento afectado | Verificación realizada | Cambios humanos |
+|---|---|---|---|---|---|
+| 2026-11-03 | Claude (Anthropic) | Apoyo en la revisión y ejecución de los pasos del paquete, y en la preparación y verificación de los archivos según la guía del equipo | `src/pipeline.py`, `src/servicio.py`, `api/`, `app/`, `tests/test_api.py`, `docs/aplicacion.md` | Ejecución de `pytest` (45 pruebas en verde) y de `python -m src.pipeline`, con revisión de los resultados | Roque decidió y autorizó cada paso, revisó los resultados del pipeline y de las pruebas y aprobó la publicación de cada cambio |
+
+**Datos compartidos con la IA:** solo material público o del curso (enunciado, dataset público CC BY 4.0 y código del repositorio). No se compartieron datos personales.
