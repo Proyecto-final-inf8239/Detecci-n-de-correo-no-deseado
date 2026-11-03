@@ -14,3 +14,9 @@ joblib>=1.4
 # Paquete 4: pruebas estadísticas y gráficos
 scipy>=1.13
 matplotlib>=3.9
+
+# Paquete 6: aplicación y API
+streamlit>=1.50
+fastapi>=0.115
+uvicorn>=0.30
+httpx>=0.27
